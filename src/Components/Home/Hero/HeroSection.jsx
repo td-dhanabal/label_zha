@@ -6,6 +6,7 @@ import "./HeroSection.css";
 import { Model } from "../../Model/Model";
 import { Link } from "react-router-dom";
 
+import Product_1 from "../../../Assets/Products/heroSection.png";
 const HeroSection = () => {
   const [tshirtColor, setTshirtColor] = useState("red");
 
@@ -24,17 +25,22 @@ const HeroSection = () => {
     <>
       <div className="heroMain">
         <div className="sectionleft">
-          <p>New Trend</p>
-          <h1>Summer Sale Stylish</h1>
-          <span>Limited Time Offer - Up to 60% off & Free Shipping</span>
+          <p>Label Zha</p>
+          <h1>Launching Sale...</h1>
+          {/* <span>Limited Time Offer - Up to 60% off & Free Shipping</span> */}
           <div className="heroLink">
-            <Link to="/shop" onClick={scrollToTop}>
+            {/* <Link to="/shop" onClick={scrollToTop}>
               <h5>Discover More</h5>
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="sectionright">
-          <Canvas
+          <img
+            src={Product_1}
+            alt={Product_1}
+            className="Product_1"
+          />
+          {/* <Canvas
             className="canvasModel"
             camera={{ position: [0, 5, 15], fov: 50 }}
           >
@@ -73,7 +79,7 @@ const HeroSection = () => {
               onClick={() => changeColor("red")}
               style={{ backgroundColor: "red" }}
             ></button>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

@@ -59,25 +59,25 @@ const Navbar = () => {
                   SHOP
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/blog" onClick={scrollToTop}>
                   BLOG
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/about" onClick={scrollToTop}>
                   ABOUT
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/contact" onClick={scrollToTop}>
                   CONTACT
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
-        <div className="iconContainer">
+        {/* <div className="iconContainer">
           <FiSearch size={22} onClick={scrollToTop} />
           <Link to="/loginSignUp" onClick={scrollToTop}>
             <FaRegUser size={22} />
@@ -95,8 +95,8 @@ const Navbar = () => {
             </Badge>
           </Link>
           <FiHeart size={22} onClick={scrollToTop} />
-          {/* <RiMenu2Line size={22} /> */}
-        </div>
+          <RiMenu2Line size={22} />
+        </div> */}
       </nav>
 
       {/* Mobile Menu */}
@@ -112,7 +112,7 @@ const Navbar = () => {
               <img src={logo} alt="Logo" />
             </Link>
           </div>
-          <Link to="/cart">
+          {/* <Link to="/cart">
             <Badge
               badgeContent={cart.items.length === 0 ? "0" : cart.items.length}
               color="primary"
@@ -123,7 +123,7 @@ const Navbar = () => {
             >
               <RiShoppingBagLine size={22} color="black" />
             </Badge>
-          </Link>
+          </Link> */}
         </div>
         <div className={`mobile-menu ${mobileMenuOpen ? "open" : ""}`}>
           <div className="mobile-menuTop">
@@ -142,16 +142,16 @@ const Navbar = () => {
                     HOME
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/shop" onClick={toggleMobileMenu}>
                     SHOP
                   </Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <Link to="/blog" onClick={toggleMobileMenu}>
                     BLOG
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link to="/about" onClick={toggleMobileMenu}>
                     ABOUT
@@ -167,13 +167,13 @@ const Navbar = () => {
           </div>
 
           <div className="mobile-menuFooter">
-            <div className="mobile-menuFooterLogin">
+            {/* <div className="mobile-menuFooterLogin">
               <Link to="/loginSignUp" onClick={toggleMobileMenu}>
                 <FaRegUser />
                 <p>My Account</p>
               </Link>
-            </div>
-            <div className="mobile-menuFooterLangCurrency">
+            </div> */}
+            {/* <div className="mobile-menuFooterLangCurrency">
               <div className="mobile-menuFooterLang">
                 <p>Language</p>
                 <select name="language" id="language">
@@ -192,7 +192,7 @@ const Navbar = () => {
                   <option value="GBP">£ GBP</option>
                 </select>
               </div>
-            </div>
+            </div> */}
             <div className="mobile-menuSocial_links">
               <FaFacebookF />
               <FaXTwitter />

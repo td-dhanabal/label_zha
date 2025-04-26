@@ -182,10 +182,18 @@
 
 .trendyProductNameInfo h5 {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   text-align: left;
+  margin-top: 10px;
 }
-
+.trendyProductNameInfo label {
+  font-size: 20px;
+  color: green;
+}
+.trendyProductNameInfo p {
+  color: red;
+  text-decoration: line-through;
+}
 .trendyProductRatingReviews {
   display: flex;
   gap: 10px;

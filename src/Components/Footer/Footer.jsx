@@ -34,23 +34,25 @@ const Footer = () => {
               <img src={logo} alt="" Z />
             </div>
 
-            <p>1418 River Drive, Suite 35 Cottonhall, CA 9622 United States</p>
+            {/* <p>1418 River Drive, Suite 35 Cottonhall, CA 9622 United States</p> */}
 
-            <div className="footer_address">
+            {/* <div className="footer_address">
               <strong> sale@uomo.com </strong>
               <strong> +1 246-345-0695 </strong>
-            </div>
-
+            </div> */}
+          <div className="footer_content">
+            <h5>Label Zha Fashions.</h5>
+          </div>
             <div className="social_links">
-              <FaFacebookF />
-              <FaXTwitter />
+              {/* <FaFacebookF />
+              <FaXTwitter /> */}
               <FaInstagram />
               <FaYoutube />
-              <FaPinterest />
+              {/* <FaPinterest /> */}
             </div>
           </div>
-
-          <div className="footer_content">
+          
+          {/* <div className="footer_content">
             <h5>Company</h5>
             <div className="links_container">
               <ul onClick={scrollToTop}>
@@ -71,8 +73,8 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="footer_content">
+          </div> */}
+          {/* <div className="footer_content">
             <h5>Shop</h5>
             <div className="links_container">
               <ul onClick={scrollToTop}>
@@ -93,8 +95,8 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="footer_content">
+          </div> */}
+          {/* <div className="footer_content">
             <h5>Help</h5>
             <div className="links_container">
               <ul onClick={scrollToTop}>
@@ -118,8 +120,8 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="footer_right">
+          </div> */}
+          {/* <div className="footer_right">
             <h5>Subscribe</h5>
             <p>
               Be the first to get the latest news about trends, promotions, and
@@ -135,9 +137,9 @@ const Footer = () => {
             <div className="paymentIconContainer">
               <img src={paymentIcon} alt="" />
             </div>
-          </div>
+          </div> */}
         </div>
-        <div className="footer_bottom">
+        {/* <div className="footer_bottom">
           <p>
             © {getCurrentYear()} Uomo. All Rights Reserved | Made By{" "}
             <a
@@ -170,7 +172,7 @@ const Footer = () => {
               </select>
             </div>
           </div>
-        </div>
+        </div> */}
       </footer>
     </>
   );
