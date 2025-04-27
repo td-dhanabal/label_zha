@@ -54,11 +54,11 @@ const Navbar = () => {
                   HOME
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/shop" onClick={scrollToTop}>
                   SHOP
                 </Link>
-              </li>
+              </li> */}
               {/* <li>
                 <Link to="/blog" onClick={scrollToTop}>
                   BLOG
@@ -194,11 +194,11 @@ const Navbar = () => {
               </div>
             </div> */}
             <div className="mobile-menuSocial_links">
-              <FaFacebookF />
-              <FaXTwitter />
+              {/* <FaFacebookF /> */}
+              {/* <FaXTwitter /> */}
               <FaInstagram />
               <FaYoutube />
-              <FaPinterest />
+              {/* <FaPinterest /> */}
             </div>
           </div>
         </div>
