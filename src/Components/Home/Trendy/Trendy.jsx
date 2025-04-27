@@ -85,35 +85,34 @@ const Trendy = () => {
           New <span>Arrivals</span>
         </h2>
         <div className="trendyTabs">
-          <div className="trendyTabContent">
-            <div className="trendyMainContainer">
-              {StoreData.slice(0, 8).map((product) => (
-                <div className="trendyProductContainer" key={product.id}>
-                  <div className="trendyProductImages">
-                    {/* <Link to="/Product" onClick={scrollToTop}> */}
-                    <img
-                      src={product.frontImg}
-                      alt=""
-                      className="trendyProduct_front"
-                    />
-                    <img
-                      src={product.backImg}
-                      alt=""
-                      className="trendyProduct_back"
-                    />
-                    {/* </Link> */}
-                    {/* <h4 onClick={() => handleAddToCart(product)}>
+          <div className="trendyMainContainer">
+            {StoreData.slice(0, 8).map((product) => (
+              <div className="trendyProductContainer" key={product.id}>
+                <div className="trendyProductImages">
+                  {/* <Link to="/Product" onClick={scrollToTop}> */}
+                  <img
+                    src={product.frontImg}
+                    alt=""
+                    className="trendyProduct_front"
+                  />
+                  <img
+                    src={product.backImg}
+                    alt=""
+                    className="trendyProduct_back"
+                  />
+                  {/* </Link> */}
+                  {/* <h4 onClick={() => handleAddToCart(product)}>
                         Add to Cart
                       </h4> */}
-                  </div>
-                  {/* <div
+                </div>
+                {/* <div
                     className="trendyProductImagesCart"
                     onClick={() => handleAddToCart(product)}
                   >
                     <FaCartPlus />
                   </div> */}
-                  <div className="trendyProductInfo">
-                    {/* <div className="trendyProductCategoryWishlist">
+                <div className="trendyProductInfo">
+                  {/* <div className="trendyProductCategoryWishlist">
                         <p>Dresses</p>
                         <FiHeart
                           onClick={() => handleWishlistClick(product.productID)}
@@ -125,14 +124,14 @@ const Trendy = () => {
                           }}
                         />
                       </div> */}
-                    <div className="trendyProductNameInfo">
-                      {/* <Link to="product" onClick={scrollToTop}> */}
-                      <h5>{product.productName}</h5>
-                      {/* </Link> */}
+                  <div className="trendyProductNameInfo">
+                    {/* <Link to="product" onClick={scrollToTop}> */}
+                    <h5>{product.productName}</h5>
+                    {/* </Link> */}
 
-                      <label>Rs.{product.productPrice}</label>
-                      <p>Rs.{product.productDisPrice}</p>
-                      {/* <div className="trendyProductRatingReviews">
+                    <label>Rs.{product.productPrice}</label>
+                    <p>Rs.{product.productDisPrice}</p>
+                    {/* <div className="trendyProductRatingReviews">
                           <div className="trendyProductRatingStar">
                             <FaStar color="#FEC78A" size={10} />
                             <FaStar color="#FEC78A" size={10} />
@@ -142,11 +141,10 @@ const Trendy = () => {
                           </div>
                           <span>{product.productReviews}</span>
                         </div> */}
-                    </div>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
         {/* <h2>
