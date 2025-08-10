@@ -64,11 +64,11 @@ const Navbar = () => {
                   BLOG
                 </Link>
               </li> */}
-              <li>
+              {/* <li>
                 <Link to="/about" onClick={scrollToTop}>
                   ABOUT
                 </Link>
-              </li>
+              </li> */}
               {/* <li>
                 <Link to="/contact" onClick={scrollToTop}>
                   CONTACT
@@ -152,7 +152,7 @@ const Navbar = () => {
                     BLOG
                   </Link>
                 </li> */}
-                <li>
+                {/* <li>
                   <Link to="/about" onClick={toggleMobileMenu}>
                     ABOUT
                   </Link>
@@ -161,7 +161,7 @@ const Navbar = () => {
                   <Link to="/contact" onClick={toggleMobileMenu}>
                     CONTACT
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
