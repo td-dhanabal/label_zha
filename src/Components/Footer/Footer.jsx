@@ -46,8 +46,8 @@ const Footer = () => {
             <div className="social_links">
               {/* <FaFacebookF />
               <FaXTwitter /> */}
-              <FaInstagram />
-              <FaYoutube />
+              <FaInstagram size={22} />
+              <FaYoutube size={22} />
               {/* <FaPinterest /> */}
             </div>
           </div>

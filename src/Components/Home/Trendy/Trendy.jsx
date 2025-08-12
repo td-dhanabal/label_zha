@@ -80,6 +80,12 @@ const Trendy = () => {
 
   return (
     <>
+      <div class="marquee-wrap" aria-hidden="true">
+        <div class="marquee">
+          📢 Now accepting orders via WhatsApp only— message us at
+          +91-8088735223 to place your order!
+        </div>
+      </div>
       <div className="trendyProducts">
         <h2>
           New <span>Arrivals</span>
@@ -128,9 +134,12 @@ const Trendy = () => {
                     {/* <Link to="product" onClick={scrollToTop}> */}
                     <h5>{product.productName}</h5>
                     {/* </Link> */}
-
-                    <label>Rs.{product.productPrice}</label>
-                    <p>Rs.{product.productDisPrice}</p>
+                    <h6>{product.productDesc}</h6>
+                    <div className="priceContainer">
+                    <label>₹{product.productPrice}</label>
+                    <p>₹{product.productDisPrice}</p>
+                    {/* <p>10% Off</p> */}
+                    </div>
                     {/* <div className="trendyProductRatingReviews">
                           <div className="trendyProductRatingStar">
                             <FaStar color="#FEC78A" size={10} />

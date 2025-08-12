@@ -81,12 +81,21 @@
 .mobile-nav {
   display: none;
 }
+.brand_name {
+  font-style: italic;
+  font-weight: bold;
+}
 
 @media screen and (max-width: 1210px) {
+  /* .navBar {
+    display: block;
+  } */
   .navBar {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 10px;
   }
-
   .mobile-nav {
     display: flex;
     align-items: center;

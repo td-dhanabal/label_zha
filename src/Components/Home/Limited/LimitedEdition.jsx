@@ -160,9 +160,13 @@ const LimitedEdition = () => {
                       <div className="productNameInfo">
                         {/* <Link to="/Product" onClick={scrollToTop}> */}
                         <h5>{product.productName}</h5>
+                        <h6>{product.productDesc}</h6>
                         {/* </Link> */}
-                        <label>Rs.{product.productPrice}</label>
-                        <p>Rs.{product.productDisPrice}</p>
+                        <div className="priceContainer">
+                          <label>₹{product.productPrice}</label>
+                          <p>₹{product.productDisPrice}</p>
+                          {/* <p>10% Off</p> */}
+                        </div>
                         {/* <div className="productRatingReviews">
                           <div className="productRatingStar">
                             <FaStar color="#FEC78A" size={10} />
