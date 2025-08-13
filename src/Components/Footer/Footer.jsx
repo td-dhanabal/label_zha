@@ -40,18 +40,25 @@ const Footer = () => {
               <strong> sale@uomo.com </strong>
               <strong> +1 246-345-0695 </strong>
             </div> */}
-          <div className="footer_content">
-            <h5>Label Zha Fashions.</h5>
-          </div>
+            <div className="footer_content">
+              <h5>Label Zha Fashions.</h5>
+            </div>
             <div className="social_links">
               {/* <FaFacebookF />
               <FaXTwitter /> */}
-              <FaInstagram size={22} />
-              <FaYoutube size={22} />
+              <Link to="https://www.instagram.com/label_zha" target="blank">
+                <FaInstagram size={22} />
+              </Link>
+              <Link
+                to="https://www.youtube.com/@pratheikshamohan5402"
+                target="blank"
+              >
+                <FaYoutube size={30} />
+              </Link>
               {/* <FaPinterest /> */}
             </div>
           </div>
-          
+
           {/* <div className="footer_content">
             <h5>Company</h5>
             <div className="links_container">
